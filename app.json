@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "BME 360: Bioimaging Fourier Transform & DICOM Studio",
+    "slug": "bme-360-bioimaging-studio",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./public/pwa-512x512.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./public/pwa-512x512.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0f172a"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bme360.bioimaging"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./public/pwa-512x512.png",
+        "backgroundColor": "#0f172a"
+      },
+      "package": "com.bme360.bioimaging"
+    },
+    "web": {
+      "favicon": "./public/icon.svg"
+    }
+  }
+}

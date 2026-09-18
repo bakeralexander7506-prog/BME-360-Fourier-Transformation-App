@@ -1,0 +1,10 @@
+{
+  "name": "Remix BME 360: Bioimaging Fourier Transform \u0026 DICOM Studio",
+  "description": "Interactive 2D Fourier Transform lab for BME 360 Introduction to Bioimaging. Features k-space filtering, interactive frequency deletion, Free the Tiger periodic noise removal, and medical DICOM CT/MRI/PET segmentation.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

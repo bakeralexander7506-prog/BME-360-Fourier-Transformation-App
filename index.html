@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BME 360: Bioimaging Fourier Transform & DICOM Studio</title>
+    <meta name="description" content="Interactive 2D Fourier Transform lab for BME 360 Introduction to Bioimaging. Features k-space filtering, interactive frequency deletion, Free the Tiger periodic noise removal, and medical DICOM CT/MRI/PET segmentation." />
+    <meta property="og:title" content="BME 360: Bioimaging Fourier Transform & DICOM Studio" />
+    <meta property="og:description" content="Interactive 2D Fourier Transform lab for BME 360 Introduction to Bioimaging. Features k-space filtering, interactive frequency deletion, Free the Tiger periodic noise removal, and medical DICOM CT/MRI/PET segmentation." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="BME360 Lab" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <script>
+      // Filter benign Vite HMR websocket connection notices in iframe preview
+      (function() {
+        const origError = console.error;
+        console.error = function(...args) {
+          if (typeof args[0] === 'string' && args[0].includes('[vite] failed to connect to websocket')) {
+            console.debug(...args);
+            return;
+          }
+          origError.apply(console, args);
+        };
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </radialGradient>
+    <radialGradient id="kSpaceGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9"/>
+      <stop offset="25%" stop-color="#0284c7" stop-opacity="0.6"/>
+      <stop offset="60%" stop-color="#0369a1" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="freqGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="100" fill="url(#bgGrad)" />
+
+  <!-- Frequency Domain concentric circles -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="6 6" />
+  <circle cx="256" cy="256" r="160" fill="none" stroke="#475569" stroke-width="2.5" />
+  <circle cx="256" cy="256" r="110" fill="none" stroke="#0ea5e9" stroke-width="3" stroke-dasharray="4 4" opacity="0.7"/>
+  <circle cx="256" cy="256" r="60" fill="url(#kSpaceGlow)" />
+
+  <!-- k-space axes (u and v axes) -->
+  <line x1="256" y1="40" x2="256" y2="472" stroke="#64748b" stroke-width="2" stroke-dasharray="8 6"/>
+  <line x1="40" y1="256" x2="472" y2="256" stroke="#64748b" stroke-width="2" stroke-dasharray="8 6"/>
+
+  <!-- DC Center Spike -->
+  <circle cx="256" cy="256" r="16" fill="#f8fafc" />
+  <circle cx="256" cy="256" r="8" fill="#38bdf8" />
+
+  <!-- Fourier Wave Sine Patterns -->
+  <path d="M 80,380 Q 124,320 168,380 T 256,380 T 344,380 T 432,380" fill="none" stroke="url(#freqGrad)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 120,410 Q 154,370 188,410 T 256,410 T 324,410 T 392,410" fill="none" stroke="#38bdf8" stroke-width="3.5" opacity="0.6" stroke-linecap="round"/>
+
+  <!-- Harmonic Spikes (Notch filter demonstration) -->
+  <circle cx="346" cy="256" r="7" fill="#f43f5e" />
+  <circle cx="166" cy="256" r="7" fill="#f43f5e" />
+  <circle cx="346" cy="256" r="16" fill="none" stroke="#f43f5e" stroke-width="2" stroke-dasharray="3 3"/>
+  <circle cx="166" cy="256" r="16" fill="none" stroke="#f43f5e" stroke-width="2" stroke-dasharray="3 3"/>
+
+  <!-- Bioimaging symbol: stylized medical cross & aperture -->
+  <path d="M 236 90 L 276 90 L 276 130 L 316 130 L 316 170 L 276 170 L 276 210 L 236 210 L 236 170 L 196 170 L 196 130 L 236 130 Z" fill="#0284c7" opacity="0.3"/>
+
+  <!-- Text "BME 360" badge -->
+  <rect x="186" y="56" width="140" height="34" rx="17" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+  <text x="256" y="79" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" text-anchor="middle" letter-spacing="2">BME 360</text>
+</svg>
