@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>BME 360 Studio</title>
+    <script>
+      // Single Page Application redirect for GitHub Pages
+      // Redirects any 404 subpath back to index.html with query parameter
+      sessionStorage.redirect = location.href;
+      var pathSegments = location.pathname.split('/').filter(Boolean);
+      // If deployed in a subdirectory (e.g., https://username.github.io/repo-name/)
+      var repoBase = pathSegments.length > 0 ? '/' + pathSegments[0] + '/' : '/';
+      window.location.replace(repoBase);
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to BME 360 Studio...</p>
+  </body>
+</html>
