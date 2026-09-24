@@ -6,7 +6,7 @@ import {VitePWA} from 'vite-plugin-pwa';
 
 export default defineConfig(({ command }) => {
   return {
-    base: command === 'build' ? './' : '/',
+    base: '/BME-360-Fourier-Transformation-App/',
     plugins: [
       react(),
       tailwindcss(),
