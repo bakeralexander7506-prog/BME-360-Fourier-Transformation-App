@@ -1,5 +1,5 @@
 {
-  "id": "./",
+  "id": "/BME-360-Fourier-Transformation-App/",
   "name": "BME 360: Bioimaging Fourier Transform & DICOM Studio",
   "short_name": "BME360 Lab",
   "description": "Interactive 2D Fourier Transform lab for BME 360 Introduction to Bioimaging. Features k-space filtering, interactive frequency deletion, Free the Tiger periodic noise removal, and medical DICOM CT/MRI/PET segmentation.",
