@@ -67,6 +67,7 @@ Keep your tone encouraging, rigorous yet intuitive for biomedical engineering un
   // Vite middleware for development vs static build in production
   if (process.env.NODE_ENV !== "production") {
     const vite = await createViteServer({
+      base: "/",
       server: { middlewareMode: true, hmr: false },
       appType: "spa",
     });

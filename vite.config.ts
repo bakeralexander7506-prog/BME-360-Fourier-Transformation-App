@@ -4,18 +4,19 @@ import path from 'path';
 import {defineConfig} from 'vite';
 import {VitePWA} from 'vite-plugin-pwa';
 
-export default defineConfig(() => {
+export default defineConfig(({ command }) => {
   return {
-    base: './',
+    base: command === 'build' ? './' : '/',
     plugins: [
       react(),
       tailwindcss(),
       VitePWA({
         registerType: 'autoUpdate',
-        includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'icon.svg'],
+        manifestFilename: 'manifest.json',
+        includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'icon.svg', 'manifest.json'],
         manifest: {
           id: './',
-          name: 'BME 360 Fourier Transform & DICOM Studio',
+          name: 'BME 360: Bioimaging Fourier Transform & DICOM Studio',
           short_name: 'BME360 Lab',
           description: 'Interactive 2D Fourier Transform and Medical DICOM filtering & segmentation lab.',
           theme_color: '#0f172a',

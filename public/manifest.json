@@ -1,0 +1,37 @@
+{
+  "id": "./",
+  "name": "BME 360: Bioimaging Fourier Transform & DICOM Studio",
+  "short_name": "BME360 Lab",
+  "description": "Interactive 2D Fourier Transform lab for BME 360 Introduction to Bioimaging. Features k-space filtering, interactive frequency deletion, Free the Tiger periodic noise removal, and medical DICOM CT/MRI/PET segmentation.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#0f172a",
+  "background_color": "#0f172a"
+}
