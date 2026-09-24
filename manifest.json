@@ -28,8 +28,8 @@
       "purpose": "maskable"
     }
   ],
-  "start_url": "./",
-  "scope": "./",
+  "start_url": "/BME-360-Fourier-Transformation-App/",
+  "scope": "/BME-360-Fourier-Transformation-App/",
   "display": "standalone",
   "orientation": "any",
   "theme_color": "#0f172a",
